@@ -13,6 +13,7 @@ public class DoctorService {
     private DoctorRepository doctorRepository;
     public List<Doctor> findAllDoctors() {
         return doctorRepository.findAll();
+
     }
 
 }
