@@ -9,15 +9,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Doctor {
-
+@Table(name = "users")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String specialization;
-    private String email;
-    private String phone;
-
+    private String username;
+    private String password;
+    private String role;
 }
